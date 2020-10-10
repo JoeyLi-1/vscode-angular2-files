@@ -7,8 +7,8 @@ export const config: IConfig = {
     prefix: 'app',
   }],
   defaults: {
-    styleExt: 'css',
-    style: 'css',
+    styleExt: 'less',
+    style: 'less',
     component: {
       spec: true,
       inlineStyle: false,

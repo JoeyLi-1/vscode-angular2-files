@@ -3,6 +3,8 @@ export enum TemplateType {
     ConponentSpec = 'component.spec.tmpl',
     ComponentHtml = 'component.html.tmpl',
     ComponentStyle = 'component.style.tmpl',
+    ComponentDefinition = 'component.d.tmpl',
+    ComponentService = 'component.service.tmpl',
     Directive = 'directive.tmpl',
     DirectiveSpec = 'directive.spec.tmpl',
     Module = 'module.tmpl',

@@ -1,22 +1,22 @@
 {
-    "name": "vscode-angular2-files",
-    "displayName": "Angular Files",
+    "name": "vscode-angular2-files-ex",
+    "displayName": "Clarify Angular Files",
     "description": "Quickly scaffold angular file templates",
-    "version": "1.6.4",
+    "version": "2.0.0",
     "icon": "images/icon.png",
-    "publisher": "alexiv",
+    "publisher": "Joey",
     "author": {
-        "name": "Alexander Ivanichev"
+        "name": "Joey"
     },
     "engines": {
         "vscode": "^1.22.0"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/ivalexa/vscode-angular2-files"
+        "url": "https://github.com/JoeyLi-1/vscode-angular2-files"
     },
     "bugs": {
-        "url": "https://github.com/ivalexa/vscode-angular2-files/issues"
+        "url": "https://github.com/JoeyLi-1/vscode-angular2-files/issues"
     },
     "keywords": [
         "Angular 2",
@@ -53,7 +53,7 @@
                 },
                 "angular2-files.menu.directive": {
                     "type": "boolean",
-                    "default": true,
+                    "default": false,
                     "description": "Shows or hides the menu item."
                 },
                 "angular2-files.menu.pipe": {
@@ -63,7 +63,7 @@
                 },
                 "angular2-files.menu.service": {
                     "type": "boolean",
-                    "default": true,
+                    "default": false,
                     "description": "Shows or hides the menu item."
                 },
                 "angular2-files.menu.class": {
@@ -73,12 +73,12 @@
                 },
                 "angular2-files.menu.interface": {
                     "type": "boolean",
-                    "default": true,
+                    "default": false,
                     "description": "Shows or hides the menu item."
                 },
                 "angular2-files.menu.route": {
                     "type": "boolean",
-                    "default": true,
+                    "default": false,
                     "description": "Shows or hides the menu item."
                 },
                 "angular2-files.menu.enum": {
@@ -88,7 +88,7 @@
                 },
                 "angular2-files.menu.module": {
                     "type": "boolean",
-                    "default": true,
+                    "default": false,
                     "description": "Shows or hides the menu item."
                 }
             }
@@ -96,7 +96,7 @@
         "commands": [
             {
                 "command": "extension.addAngular2Component",
-                "title": "Generate Component"
+                "title": "Generate ComponentEx"
             },
             {
                 "command": "extension.addAngular2Directive",

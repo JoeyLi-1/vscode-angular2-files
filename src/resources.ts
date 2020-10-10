@@ -84,6 +84,8 @@ export const resources = new Map<ResourceType, IResource>([
     { name: config => `component.${config.defaults.component.styleext || config.defaults.styleExt}`, type: TemplateType.ComponentStyle, condition: (config, params) => !config.defaults.component.inlineStyle },
     { name: config => `component.html`, type: TemplateType.ComponentHtml, condition: (config, params) => !config.defaults.component.inlineTemplate },
     { name: config => `component.spec.ts`, type: TemplateType.ConponentSpec, condition: (config, params) => config.defaults.component.spec },
+    { name: config => `component.d.ts`, type: TemplateType.ComponentDefinition },
+    { name: config => `component.service.ts`, type: TemplateType.ComponentService },
     ],
     createFolder: config => !config.defaults.component.flat,
     options: [OptionType.InlineStyle,
