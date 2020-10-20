@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { I${upperName}Props, I${upperName}States, I${upperName}Service } from './${inputName}.component.d';
+import { I${upperName}Props, I${upperName}States, I${upperName}Output, I${upperName}Service } from './${inputName}.component.d';
 
 @Injectable()
 export class ${upperName}Service implements I${upperName}Service {
@@ -8,6 +8,17 @@ export class ${upperName}Service implements I${upperName}Service {
     }
 
     changeDelegate(oldProps: I${upperName}Props, newProps: I${upperName}Props, states: I${upperName}States): Object {
+        if (!oldProps) {
+            return {};
+        }
         return {};
+    }
+
+    destroyDelegate(props: I${upperName}Props, states: I${upperName}States): void {
+        return;
+    }
+
+    outputFormatter(props: I${upperName}Props, states: I${upperName}States): I${upperName}Output {
+        return {} as I${upperName}Output;
     }
 }

@@ -13,4 +13,6 @@ export interface I${upperName}Output {
 export interface I${upperName}Service {
     initDelegate(props: I${upperName}Props, states: I${upperName}States): Object;
     changeDelegate(oldProps: I${upperName}Props, newProps: I${upperName}Props, states: I${upperName}States): Object;
+    destroyDelegate(props: I${upperName}Props, states: I${upperName}States): void;
+    outputFormatter(props: I${upperName}Props, states: I${upperName}States): I${upperName}Output;
 }
