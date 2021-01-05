@@ -2,6 +2,11 @@
 
 This extension allows **quickly scaffold angular 2 file templates** in VS Code project.
 
+Command:
+* Install vsce beforehand: npm install -g vsce
+* Pack up code and resource: vsce package
+* Install extension with ".vsix" file: code --install-extension my-extension-0.0.1.vsix
+
 > Inspired by vscode-angular2-files (https://github.com/ivalexa/vscode-angular2-files)
 
 
