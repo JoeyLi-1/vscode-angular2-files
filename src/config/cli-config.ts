@@ -18,7 +18,7 @@ export const config: IConfig = {
       viewEncapsulation: 'Emulated',
       styleext: null,
       style: null,
-      prefix: null,
+      prefix: 'prsm',
       skipImport: false,
       module: 'app',
     },
