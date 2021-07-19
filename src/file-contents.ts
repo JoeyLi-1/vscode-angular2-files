@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as es6Renderer from 'express-es6-template-engine';
 import { IConfig } from './models/config';
-import { toCamelCase, toUpperCase } from './formatting';
+import { toCamelCase, toUpperCase, toKebabCase } from './formatting';
 import { promisify } from './promisify';
 import { TemplateType } from './enums/template-type';
 
@@ -43,7 +43,7 @@ export class FileContents {
     const [app] = config.apps;
     const cmpPrefix = config.defaults.component.prefix || app.prefix;
     const dirPrefix = config.defaults.directive.prefix || app.prefix;
-    const cmpSelector = config.defaults.component.selector || `${cmpPrefix}-${inputName}`;
+    const cmpSelector = config.defaults.component.selector || `${cmpPrefix}-${toKebabCase(inputName)}`;
     const dirSelector = config.defaults.directive.selector || `${dirPrefix}${toUpperCase(inputName)}`;
     const styleExt = config.defaults.component.styleext || config.defaults.styleExt;
     const routingScope = config.defaults.module.routingScope || 'Child';
